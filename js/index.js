@@ -13,7 +13,7 @@ var scale=d3.scale.linear()
 .range([height,0]);
 
 var scale_x=d3.scale.ordinal()
-.domain(data.map(function(d){return d.population;}))
+.domain(data.map(function(d){return d.year;}))
 .rangeBands([0,width],0.1);
 
 var svg=d3.select("#container")
