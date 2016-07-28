@@ -9,7 +9,7 @@ svg_width=width+margin.left+margin.right,
 svg_height=height+margin.top+margin.bottom;
 
 var scale=d3.scale.linear()
-.domain([0,d3.max(data.function(d){return d.population;})])
+.domain([0,d3.max(data,function(d){return d.population;})])
 .range([height,0]);
 
 var scale_x=d3.scale.ordinal()
